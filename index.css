@@ -1,0 +1,103 @@
+*{
+    font-size: 30px;
+    margin:0;
+    padding:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background: rgb(3, 2, 44);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 800px;
+    width: 900px;
+    margin: auto;
+}
+.all{
+    background-color: white;
+    padding:30px 30px 30px 30px;
+    border-radius: 10px;
+}
+.title{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(4, 4, 129);
+    letter-spacing: 1px;
+    margin: 30px 0;
+}
+.todo-list{
+    width: 800px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: white;
+}
+.list-head{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+.entered-list{
+  padding: 10px;
+  width:500px;
+  border-radius: 5px;
+  border: 1px solid black;
+  /* font-size: 16px; */
+  outline: none;
+}
+.add-list{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(4, 4, 129);
+    outline: none;
+    /* font-size: 16px; */
+    color: white;
+    cursor: pointer;
+    opacity: .6;
+    pointer-events: none;
+}
+.add-list.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.tasks{
+    width: 100%;
+    margin-top: 30px;
+}
+.item{
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.item p{
+    /* font-size: 16px; */
+    font-weight: 400;
+    color: #d02a2a;
+    text-align: center;
+    
+    letter-spacing: 1px;
+    height:40px;
+
+}
+.item.completed p{
+text-decoration: line-through;
+color: #111;
+}
+.item-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.edit{
+    color: rgb(3, 3, 134);
+    /* font-size: 18px; */
+    cursor: pointer;
+}
+.del{
+    color: rgb(173, 7, 7);
+    /* font-size: 18px; */
+    cursor: pointer;
+}
